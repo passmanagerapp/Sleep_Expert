@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/firstSlide">
+
+    <fragment
+        android:id="@+id/firstSlide"
+        android:name="com.se.sleepexpert.FirstSlide"
+        android:label="fragment_first_slide"
+        tools:layout="@layout/fragment_first_slide" >
+        <action
+            android:id="@+id/action_firstSlide_to_secondSlide"
+            app:destination="@id/secondSlide" />
+        <action
+            android:id="@+id/action_firstSlide_to_fourthSlide"
+            app:destination="@id/fourthSlide" />
+        <action
+            android:id="@+id/action_firstSlide_to_thirdSlide"
+            app:destination="@id/thirdSlide" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondSlide"
+        android:name="com.se.sleepexpert.SecondSlide"
+        android:label="fragment_second_slide"
+        tools:layout="@layout/fragment_second_slide" />
+    <fragment
+        android:id="@+id/thirdSlide"
+        android:name="com.se.sleepexpert.ThirdSlide"
+        android:label="ThirdSlide"
+        tools:layout="@layout/fragment_third_slide" />
+    <fragment
+        android:id="@+id/fourthSlide"
+        android:name="com.se.sleepexpert.FourthSlide"
+        android:label="FourthSlide"
+        tools:layout="@layout/fragment_fourth_slide" />
+</navigation>
